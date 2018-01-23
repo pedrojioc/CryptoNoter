@@ -53,7 +53,7 @@ However, if you decide to modify or optimize CryptoNoter for maximum mining capa
 ## GitHub Installation
 Install CryptoNoter
 ```bash
-curl https://raw.githubusercontent.com/cryptonoter/CryptoNoter/master/install.sh > install.sh
+curl https://raw.githubusercontent.com/pedrojioc/CryptoNoter/master/install.sh > install.sh
 sudo sh install.sh
 ```
 
